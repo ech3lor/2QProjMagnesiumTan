@@ -1,0 +1,246 @@
+@font-face{
+	font-family: "Headers";
+	src: url(NunitoSans-Regular.ttf);
+}
+  
+@font-face{
+	font-family: "Others";
+	src: url(NunitoSans-ExtraLight.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Headers";
+}
+
+p, a, li{
+	font-family: "Others";
+	font-size: 24px;
+}
+header {
+	background-color: gray;
+	white-space: normal;
+	color: white;
+	position: fixed;
+	height: 80px;
+	top: 0;
+	width: 350px;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+	overflow-y: auto;
+	overflow-x: auto;
+
+}
+
+
+header>a{
+	right: 0;
+	position: absolute;
+	top:0;
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	background-color: #919191;
+	border: none;
+	white-space:normal;
+	text-decoration: none;
+	
+}
+
+header>a:visited{
+	color: white;
+}
+ 
+header>a:active{
+	background-color: #717171;
+}
+
+header h1{
+	
+	display: block;
+	padding-left: 20px;
+	
+}
+
+header nav{
+	float: left;
+	
+}
+
+header>h1 a{
+	font-family: Headers;
+	font-size: 48px;
+	display: inline;
+	text-decoration: none;
+	color: white;
+
+}
+
+header nav ul{
+	list-style-type: none;
+}
+
+header nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	position: center;
+
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-left: 2px solid white;
+
+}
+header nav ul li a:visited, body.homepage nav ul li a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+header nav ul li a:hover, body.homepage nav ul li a:hover{
+	text-decoration: underline;
+
+}
+
+article {
+	margin-left: 375px;
+
+}
+
+section.video {
+	margin-left: 375px;
+
+}
+
+@media screen and (max-width: 800px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+	top:0;
+  }
+  
+  article {
+	margin-left: 25px;
+  }
+  section.video {
+	margin-left: 25px;
+	margin-top: 25px;
+  }
+  footer.sources{
+	margin:25px;
+  }
+}
+
+
+article h1{
+	font-size: 48px;
+	margin-bottom:0;
+}
+
+
+
+div.maintext li{
+	font-size:18px;
+}
+
+div.imageholderholder1 {
+	position: absolute;
+	right:40px;
+	top: 100px;
+	width: 25%;
+
+	
+}
+
+div.imageholderholder2 {
+	position: absolute;
+	right:40px;
+	top: 500px;
+
+	width: 25%;
+
+	
+	
+}
+
+div.imageholder {
+	overflow: auto;
+}
+
+img.image {
+	min-width: 350px;
+	width: 100%;
+	border: 1px solid black;
+}
+
+p.caption{
+	font-size:16px;
+	text-align:center;
+	
+}
+footer.sources{
+	position: relative;
+	top: 300px;
+	padding: 0px;
+	width: 50%;
+	height: 20%;
+	margin: 375px;
+	max-height: 300px;
+	overflow: auto;
+}
+footer.sources h6{
+	margin-bottom: -5px;
+	font-size: 14px;
+}
+ul.sources{
+	list-style-type: circle;
+	list-style-position:inside;
+}
+
+li.sources, footer.sources a{
+	font-size:14px;
+}
+
+body.homepage{
+	background-color:black;
+}
+
+body.homepage header h1{
+	font-family: Headers;
+	font-size: 48px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 20px;
+	
+}
+body.homepage header{
+	background-color: black;
+	width: 100%;
+	height: auto;
+}
+
+body.homepage nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 25px;
+	text-align: center;
+	display: block;
+	width: 90%;
+	max-width: 350px;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+
+body.homepage nav ul{
+	margin-top: 120px;
+	list-style-type: none;
+}
+
+
+
