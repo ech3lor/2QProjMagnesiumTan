@@ -113,6 +113,11 @@ section.video {
 
 }
 
+section.video video{
+	border: 2px solid black;
+
+}
+
 @media screen and (max-width: 800px) {
   #sidebar {
     width: 100%;
