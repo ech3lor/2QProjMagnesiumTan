@@ -16,7 +16,7 @@ p, a, li{
 	font-family: "Others";
 	font-size: 24px;
 }
-header {
+header#sidebar {
 	background-color: gray;
 	white-space: normal;
 	color: white;
@@ -25,49 +25,38 @@ header {
 	top: 0;
 	width: 350px;
 	height: 100%;
-	left: 0;
+	left: 0px;
 	z-index: 1;
 	overflow-y: auto;
 	overflow-x: auto;
+	transition: left 0.5s
 
 }
 
 
-header>a{
-	right: 0;
-	position: absolute;
-	top:0;
-	display: inline-block;
-	width: 20px;
-	height: 100%;
-	background-color: #919191;
-	border: none;
-	white-space:normal;
-	text-decoration: none;
-	
-}
 
-header>a:visited{
+
+header#sidebar>a:visited{
 	color: white;
 }
  
-header>a:active{
+header#sidebar>a:active{
 	background-color: #717171;
 }
 
-header h1{
+header#sidebar h1{
 	
 	display: block;
 	padding-left: 20px;
 	
 }
 
-header nav{
+header#sidebar nav{
 	float: left;
 	
 }
 
-header>h1 a{
+header#sidebar>h1 a{
 	font-family: Headers;
 	font-size: 48px;
 	display: inline;
@@ -76,11 +65,11 @@ header>h1 a{
 
 }
 
-header nav ul{
+header#sidebar nav ul{
 	list-style-type: none;
 }
 
-header nav ul li a{
+header#sidebar nav ul li a{
 	display: inline-block;
 	text-decoration: none;
 	color: white;
@@ -92,26 +81,20 @@ header nav ul li a{
 	border-left: 2px solid white;
 
 }
-header nav ul li a:visited, body.homepage nav ul li a:visited{
+header#sidebar nav ul li a:visited, body.homepage nav ul li a:visited{
 	text-decoration: none;
 	color: white;
 }
 
-header nav ul li a:hover, body.homepage nav ul li a:hover{
+header#sidebar nav ul li a:hover, body.homepage nav ul li a:hover{
 	text-decoration: underline;
 
 }
 
-article {
-	margin-left: 375px;
-
+section#main{
+	margin-left: 350px;
+	transition: margin-left 0.5s;
 }
-
-section.video {
-	margin-left: 375px;
-
-}
-
 
 
 
@@ -122,53 +105,14 @@ article h1{
 
 
 
-div.maintext li{
-	font-size:18px;
-}
 
-div.imageholderholder1 {
-	position: absolute;
-	right:40px;
-	top: 100px;
-	width: 25%;
-
-	
-}
-
-div.imageholderholder2 {
-	position: absolute;
-	right:40px;
-	top: 500px;
-
-	width: 25%;
-
-	
-	
-}
-
-div.imageholder {
-	overflow: auto;
-}
-
-img.image {
-	min-width: 350px;
-	width: 100%;
-	border: 1px solid black;
-}
-
-p.caption{
-	font-size:16px;
-	text-align:center;
-	
-}
 footer.sources{
 	position:relative;
 	top: 200px;
 	padding: 0px;
 	width: 80%;
 	height: auto;
-	margin-left: 375px;
-	max-width: 500px;
+	max-width: 800px;
 	overflow: auto;
 
 }
@@ -176,33 +120,17 @@ footer.sources h6{
 	margin-bottom: -5px;
 	font-size: 14px;
 }
-ul.sources{
+footer.sources ul{
 	list-style-type: circle;
 	list-style-position:inside;
 }
 
-li.sources, footer.sources a{
+footer.sources a, footer.sources li{
 	font-size:14px;
 }
 
 @media screen and (max-width: 800px) {
-  #sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-	top:0;
-  }
-  
-  article {
-	margin-left: 25px;
-  }
-  section.video {
-	margin-left: 25px;
-	margin-top: 25px;
-  }
-  footer.sources{
-	margin-left: 25px;
-  }
+
 }
 
 body.homepage{
@@ -245,5 +173,23 @@ body.homepage nav ul{
 	list-style-type: none;
 }
 
+header#sidebar button{
+	right:0;
+	top:0;
+	background-color:gray;
+	width: 25px;
+	height: 100%;
+	border: none;
+	position: absolute;
+	overflow-x: hidden;
+	color: white;
+	cursor: pointer;
+
+}
 
 
+header#sidebar button:hover{
+
+  background-color: #999999;
+
+}
