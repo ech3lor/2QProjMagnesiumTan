@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <title> Science of the Past</title>
     <meta charset="utf8" />
@@ -8,7 +9,7 @@
     <meta name="date"  content="" />
 	<link rel="icon" type="image/png" href="../images/icon.png" />
 	<link rel="stylesheet" type="text/css" href="../css/stylething.css"/>
-	<script src="../scripts/retractor.js"></script>
+
 	
 </head>
 <body>
@@ -19,19 +20,63 @@
 				<ul>
 					<li><a href="page1.html">This Just In</a></li>
 					<li><a href="page2.html">What's in a Name?</a></li>
-					<li><a href="page4.html">The Archives</a></li>
-					<li><a href="page5.html">References</a></li>
 				</ul>
 			</nav>
-				
+		<button class="sidebarbtn1" onclick="closeSidebar();">||</button>
+	
 
 			
 	</header>
-	
-	<article>
-		<h1>Science of the Past</h1>
+	<section id="main">
+		<article>
+			<h1>Science of the Past</h1>
+			<p>There have been many scientific advancements made to combat the spread and effects of disease, such as...</p>
+			
+			<h2>Vaccines</h2>
+			<p>While inoculation has been practiced in some degree by Chinese monks as early as the year 1000 CE, it was only popularized in 1796 by
+			Edward Jenner, who inoculated pations with cowpox to give immunity to the more severe smallpox. His methods would also be used to eradicate
+			diseases such as rabies, diphtheria, anthrax, and cholera during the early 20th century. While vaccines normally work by introducing a weakened or dead 
+			version of the germ to be protected against, the mRNA vaccine designed for Covid-19 instead uses a protein found on the virus' surface,
+			ensuring immunity (or at least resistance), with little to no side effects.
+			<br>
+			<br>
+			For more info about the Covid-19 vaccine, see the video below by Ted-Ed:
+			</p>
+			<section class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/v-NEr3KCug8" title="YouTube video player" frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<h2>Masks</h2>
+			<p>
+				The use of the medical mask existed (if slightly apocryphally) as early as the Middle Ages, with doctors wearing
+				beak-like masks to treat victims of the Bubonic Plague. However, the first use of facemasks to control the spread 
+				of disease was during the early 1900s by Dr. Wu Lien Teh in Manchuria, to help quell the spread of a bubonic plague. 
+				It would later see use in several hospitals all aorund the world, yet some doctors refused to use such devices, calling them
+				"irritating." Today, the face mask is used to prevent the airborne spread of Covid-19, and can be seen all over the world saving countless lives.
+			</p>
+			
+			<h2>Germ Theory</h2>
+			<p>
+				The development of germ theory, the idea that disease is spread by microscopic particles called microorganisms, is credited to three scientists: Robert Koch,
+				Joseph Lister, and Louis Pasteur. By figuring out that disease was spread through microorganisms and not some other nebulous, untraceable force, scientists could
+				better devise new ways to hinder the spread of disease, as well as cure those afflicted by it. Pasteur would later develop a system to sterilize milk by heating it,
+				called Pasteurization, and Lister would be one of the first surgeons to sterilize the patients injuries, leading to greatly reduced post-surgical infection rates.
+			</p>
+		</article>
 		
-	</article>
-				
+		<footer class="sources">
+			<h6>Sources: </h6>
+			<ul>
+				<li>Encyclopædia Britannica, inc. (1998, July 20). Germ theory. Encyclopædia Britannica. Retrieved February 7, 2022, from <a href="https://www.britannica.com/science/germ-theory">Britannica.com</a></li>
+				<li>Montorfano, L., & Alonso, M. (2021, March 31). Uncovering the History of Medical Face Masks In the Time of COVID-19. ClinicalOncology. Retrieved February 7, 2022, from
+				<a href="https://www.clinicaloncology.com/COVID-19/Article/03-21/Uncovering-the-History-of-Medical-Face-Masks-In-the-Time-of-COVID-19/62804#:~:text=Johann%20Freiherr%20von%20Mikulicz%2DRadecki,W.&text=In%201915%2C%20Meltzer%20advised%20the,care%20personnel%20caring%20for%20them.">ClinicalOnclology.com</a></li>
+				<li>Strasser, B. J., & Schlich, T. (2020, May 22). A history of the medical mask and the rise of throwaway culture. The Lancet. Retrieved February 7, 2022, from <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31207-1/fulltext"> thelancet.com </a></li>
+				<li>Wong, S. (n.d.). Dr Wu Lien-teh. New Scientist. Retrieved February 7, 2022, from <a href="https://www.newscientist.com/people/dr-wu-lien-teh/"> newscientist.com </a></li>
+				<li> video from <a href = "https://www.youtube.com/watch?v=v-NEr3KCug8"> YouTube </li>
+			</ul>
+		</footer>
+	</section>			
 			
 </body>
+<script type="text/javascript" src="../scripts/sidebar_changing_script.js"></script>
+</html>
